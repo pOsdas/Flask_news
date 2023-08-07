@@ -31,13 +31,11 @@
       {% endfor %}
       <div class="form-group">
         <label>
-          {{ form.category_id.label }}
+          {{ form.category.label }}
         </label>
-        {{ form.category_id(class="form-control") }}
+        {{ form.category(class="form-control") }}
       </div>
     {{ form.submit(class="btn btn-primary btn-lg") }}
-    {{ form.report_error(class="btn btn-secondary ml-2 float-right") }}  {# Отображение кнопки "Нашли ошибку?" #}
+    <a href="#" class="btn btn-secondary ml-2 float-right">Нашли ошибку?</a>  {# Добавляем кнопку "Нашли ошибку?" без ожидания от нее действий #}
   </form>
 {% endblock content %}
-
-
